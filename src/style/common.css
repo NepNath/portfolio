@@ -25,6 +25,9 @@ footer {
     background-color: #152733;
     height: 5em;
 }
+a{
+    text-decoration: none;
+}
 /*------------------------ common elements ------------------------*/
 .nep-common-text {
     color: white;
@@ -33,7 +36,7 @@ footer {
 .nep-common-title {
     color: white;
     font-family: "Ubuntu Sans Mono", monospace;
-    font-size : 2.5em;
+    font-size : 30px;
     font-weight: bold;
 }
 /*------------------------ Header ------------------------*/
@@ -49,6 +52,7 @@ footer {
     padding: 0 15px;
 }
 .nep-common-title.header-title {
+    text-shadow: 0 0 5px white, 0 0 15px #af4fff, 0 0 25px #af4fff, 0 0 30px #af4fff;
 }
 .nep-common-logo{
     max-width: 65px;
