@@ -17,23 +17,37 @@ const { title = "NepNath" } = Astro.props;
     <Fonts />
 </head>
     <body>
-    <header>
         <div class="header-container">
-            <a class="header-title-container" href="/">
-                <img src="/img/logo.png" alt="logo" class="nep-common-logo" />
-                <span class="nep-common-title header-title">NepNath's Portfolio</span>
-            </a>
+            <span class="header-title-container">
+                <a class="header-title-container" href="/">
+                    <img src="/img/logo.png" alt="logo" class="nep-common-logo" />
+                    <span class="nep-common-title header-title">NepNath's Portfolio</span>
+                </a>
+            </span>
+            <div class="header-detail-container">
+                <details class="header-detail-tag nep-special-text">
+                    <summary>About Me</summary>
+                    <div class="header-dropdown-container">
+                        <a href="/">socials</a><br/>
+                        <a href="https://github.com/NepNath">Github</a><br/>
+                    </div>
+                </details>
+                <details class="header-detail-tag nep-special-text">
+                    <summary>My Projects</summary>
+                    <div class="header-dropdown-container">
+                        <a href="/">socials</a><br/>
+                        <a href="https://github.com/NepNath">Github</a><br/>
+                    </div>
+                </details>
+            </div>
         </div>
-    </header>
         <main>
             <slot />
         </main>
-        <footer>
-            <div class="footer-container"> footer
-                <span>A</span>
-                <span>B</span>
-                <span>C</span>
+        <div class="footer-container"> footer
+            <div>
+
             </div>
-        </footer>
+        </div>
     </body>
 </html>

@@ -2,6 +2,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     display: flex;
@@ -9,57 +10,100 @@ body {
     background-color: #223f55;
     margin: 0;
 }
-main{
+
+main {
     flex: 1;
 }
+
 ul {
     list-style-type: disc;
 }
-header{
-    border-bottom: 9px #152733 solid;
-    display: flex;
-    background-color: #36566c;
-    height: 10em;
-}
-footer {
-    background-color: #152733;
-    height: 5em;
-}
-a{
+
+a {
     text-decoration: none;
 }
+
 /*------------------------ common elements ------------------------*/
 .nep-common-text {
     color: white;
     font-family: "Roboto", sans-serif;
 }
+
 .nep-common-title {
     color: white;
     font-family: "Ubuntu Sans Mono", monospace;
-    font-size : 30px;
+    font-size: 30px;
     font-weight: bold;
 }
+
+.nep-special-text {
+    font-family: "Ubuntu Sans Mono", monospace;
+    color: white;
+}
+
 /*------------------------ Header ------------------------*/
 .header-container {
-    display: flex;
-    height: 100%;
-    align-items: center;
+    position: relative;
+    border-bottom: 9px #152733 solid;
+    background-color: #36566c;
+    height: 10em;
 }
+
+.header-detail-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
 .header-container .header-title-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 0 15px;
 }
+
 .nep-common-title.header-title {
     text-shadow: 0 0 5px white, 0 0 15px #af4fff, 0 0 25px #af4fff, 0 0 30px #af4fff;
 }
-.nep-common-logo{
+
+.nep-common-logo {
     max-width: 65px;
     border-radius: 5px;
 }
+
+.header-detail-tag {
+    padding: 4px;
+    border: green 2px solid;
+    border-radius: 50px;
+    position: relative;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.header-dropdown-container {
+    position: absolute;
+    background-color: red;
+    top: 100%;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+
 /*------------------------ Footer ------------------------*/
-.footer-container{
+.footer-container {
+    background-color: #152733;
+    height: 5em;
     color: lightslategray;
     font-family: Consolas, Monaco, monospace;
     display: grid;
