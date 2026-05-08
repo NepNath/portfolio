@@ -41,6 +41,11 @@ a {
     color: white;
 }
 
+.text-inside-container{
+    font-family: "Ubuntu Sans Mono", monospace;
+    color: white;
+    text-align: center;
+}
 /*------------------------ Header ------------------------*/
 .header-container {
     position: relative;
