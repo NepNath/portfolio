@@ -18,25 +18,30 @@ const { title = "NepNath" } = Astro.props;
 </head>
     <body>
         <div class="header-container">
-            <span class="header-title-container">
                 <a class="header-title-container" href="/">
                     <img src="/img/logo.png" alt="logo" class="nep-common-logo" />
-                    <span class="nep-common-title header-title">NepNath's Portfolio</span>
+                    <span class="nep-common-title header-title">NepNath's <br>Portfolio</span>
                 </a>
-            </span>
             <div class="header-detail-container">
-                <details class="header-detail-tag nep-special-text">
+                <details class="header-detail-tag text-inside-container">
                     <summary>About Me</summary>
                     <div class="header-dropdown-container">
-                        <a href="/">socials</a><br/>
-                        <a href="https://github.com/NepNath">Github</a><br/>
+                        <a class="text-inside-container" target="_blank" rel="noopener" href="/">socials</a><br/>
+                        <a class="text-inside-container" target="_blank" rel="noopener" href="https://github.com/NepNath">Github</a><br/>
                     </div>
                 </details>
-                <details class="header-detail-tag nep-special-text">
+                <details class="header-detail-tag text-inside-container">
                     <summary>My Projects</summary>
                     <div class="header-dropdown-container">
-                        <a href="/">socials</a><br/>
-                        <a href="https://github.com/NepNath">Github</a><br/>
+                        <a class="text-inside-container" target="_blank" rel="noopener" href="/">socials</a><br/>
+                        <a class="text-inside-container" target="_blank" rel="noopener" href="https://github.com/NepNath">Github</a><br/>
+                    </div>
+                </details>
+                <details class="header-detail-tag text-inside-container" >
+                    <summary>My Projects</summary>
+                    <div class="header-dropdown-container">
+                        <a class="text-inside-container" target="_blank" rel="noopener" href="/">socials</a><br/>
+                        <a class="text-inside-container" target="_blank" rel="noopener" href="https://github.com/NepNath">Github</a><br/>
                     </div>
                 </details>
             </div>
@@ -49,5 +54,6 @@ const { title = "NepNath" } = Astro.props;
 
             </div>
         </div>
+        <script src="../scripts/header.js"></script>
     </body>
 </html>
