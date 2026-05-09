@@ -87,8 +87,7 @@ a {
 
 .header-detail-tag {
     padding: 4px;
-    border: green 2px solid;
-    border-radius: 50px;
+    border: #152733 2px solid;
     position: relative;
     color: white;
     cursor: pointer;
